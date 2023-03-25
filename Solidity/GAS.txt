@@ -1,0 +1,7 @@
+GAS units ---> is integer value that tells how much computation effort is require it dont tell user how much does it cost to user
+Gas Price--->amount of eth we are willing to pay per unit of gas so GAS_PRICE=base+tip denot gwei
+miner dont collect the base fee when they mine base fee is burnt  tip is when you want your transaction to go faster
+
+Tx Fee----> GAS_PRICE*GAS_UNIT
+
+Tx fee sent---> maximum amount of eth you want to transaction so Tx fee sent should be greater then Tx fee
