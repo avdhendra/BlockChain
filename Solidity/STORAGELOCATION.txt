@@ -1,0 +1,67 @@
+STORAGE LOCATION
+STORAGE
+->Permanent/Persistent Location
+->Stored on the blockchain
+->Expensive to write to
+->Free to read from externally
+->Can Only be modified by the contract that holds the values
+outside the function we cannot change the storage value where the storage variable is define or in contract
+->contains 2^256 slot maximum amount to store in the contract
+->Each storage slot can hold 32 bytes
+->Storage slots can store multiple values/variable
+
+
+MEMORY
+--> Temporary Location
+--> Stored in RAM
+--> Cheaper to write to
+--> Mutable
+--> Typically used for reference type
+-->cleared after function execution
+--> Memory -> Memory =reference
+
+--> Memory->Storage=Copy
+--> Storage->Memory=Copy
+-->Storage->Storage=Copy
+
+
+CALLDATA --> Calldata is location that is only used for function argument
+
+--> Temporary Location
+-->Only Store function argument
+--> Behave similarly to memory
+--> Can be cheaper than memory
+--> Immutable
+-->Useful for ensuring no intended copies are made
+
+
+
+
+
+
+STACK
+--> Temporary location
+--> Internal Location not directly accessible(requires assembly)
+--> Used for Small Local Variables
+--> Store values needed for immediate Processing
+-->Store function value types(uint ,int,string)
+-->
+-->
+-->
+
+LOGS ---> logs are transaction receipt
+--> Associated with Transaction
+--> Cannot be accessed by smart contracts
+--> Where event data is stored
+--> Cheap data structure
+--> UseFul for returning information to the caller of a function
+--> accessed off the blockchain
+-->
+
+
+
+CODE
+
+--> Actual Code of the contract
+--> Stored on the blockchain
+-->Constant variable stored here
