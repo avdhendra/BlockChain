@@ -110,3 +110,10 @@ contract Voting {
         return votes[voteId].voted[member];
     }
 }
+
+/**
+ * Commands for hardhat
+ * npx hardhat init  >-create project
+ * npx hardhat compile -->
+ * npx hardhat test
+ */
